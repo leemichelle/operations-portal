@@ -1,5 +1,10 @@
 import React from 'react';
 import axios from 'axios';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import ClientsList from './ClientsList.jsx';
+import Products from './Products.jsx';
+import Invoice from './Invoice.jsx';
+import Navigation from './Navigation.jsx';
 
 class Operations extends React.Component {
   constructor(props) {
@@ -39,7 +44,7 @@ class Operations extends React.Component {
 
   render() {
     return (
-      <div>Testing</div>
+      <Navigation/>
     )
   }
 }
