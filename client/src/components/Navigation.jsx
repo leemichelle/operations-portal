@@ -2,10 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navigation = () => (
-  <div>
-    <NavLink to="/companies">Companies</NavLink>
-    <NavLink to="/products">Products</NavLink>
-    <NavLink to="/invoice">Invoice</NavLink>
+  <div className="navigation">
+    <NavLink to="/companies">Companies</NavLink><br/>
+    <NavLink to="/products">Products</NavLink><br/>
+    <NavLink to="/invoice">Invoice</NavLink><br/>
   </div>
 )
 

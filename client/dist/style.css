@@ -1,0 +1,31 @@
+table, th, td {
+  border: 1px solid black;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+select {
+  width: 100%;
+  font-size: 14px;
+}
+
+.header {
+  margin: 20px;
+}
+
+.next {
+  padding: 14px 15px;
+  margin: 20px 0;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 10%;
+  font-size: 16px;
+}
+
+/* .navigation {
+  height: 100%;
+  width: 20%;
+  border: 1px solid black;
+} */
