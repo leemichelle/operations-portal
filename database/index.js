@@ -2,9 +2,9 @@ const {Client} = require('pg');
 const _ = require('underscore');
 
 const client = new Client({
-  user: 'leemur',
-  host: 'localhost',
-  database: 'operations',
+  user: 'oienxnsxqybumk',
+  host: 'ec2-23-21-128-35.compute-1.amazonaws.com',
+  database: 'dftflr07pdtssf',
   port: 5432
 });
 
