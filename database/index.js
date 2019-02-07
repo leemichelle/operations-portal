@@ -2,10 +2,8 @@ const {Client} = require('pg');
 const _ = require('underscore');
 
 const client = new Client({
-  user: 'oienxnsxqybumk',
-  host: 'ec2-23-21-128-35.compute-1.amazonaws.com',
-  database: 'dftflr07pdtssf',
-  port: 5432
+  connectionString: process.env.DATABASE_URL,
+  ssl: true,
 });
 
 client.connect();
