@@ -1,5 +1,13 @@
-table, th, td {
+table, th {
+  border: 1px solid white;
+  background: #323231;
+  color: white;
+}
+
+td {
   border: 1px solid black;
+  background: white;
+  color: black;
 }
 
 * {
@@ -11,10 +19,6 @@ select {
   font-size: 14px;
 }
 
-.header {
-  margin: 20px;
-}
-
 .next {
   padding: 14px 15px;
   margin: 20px 0;
@@ -22,10 +26,20 @@ select {
   cursor: pointer;
   width: 10%;
   font-size: 16px;
+  background: #323231;
+  color: white;
 }
 
-/* .navigation {
+.container {
+  display: grid;
+  grid-template-columns: 20% 80%;
   height: 100%;
-  width: 20%;
-  border: 1px solid black;
-} */
+  grid-gap: 50px;
+}
+
+.navigation {
+  background: #323231;
+  color: white;
+  text-indent: 20px;
+  height: 100%;
+}

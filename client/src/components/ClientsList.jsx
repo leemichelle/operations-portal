@@ -2,7 +2,7 @@ import React from 'react';
 
 const ClientsList = (props) => (
   <div>
-    <span className="header">Customer List <br/>
+    <span>Customer List <br/>
     Please select one:
     </span>
     <table>
@@ -16,7 +16,8 @@ const ClientsList = (props) => (
       <tbody>
         {props.companies.map((company, index) => (
         <tr key={company.id}>
-        <input type="checkbox" 
+        <input type="checkbox"
+                className="checkbox" 
                 id={index} 
                 onClick={props.setCompany}></input>
           <td>{ company.id }</td>

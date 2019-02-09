@@ -3,6 +3,7 @@ import React from 'react';
 const Invoice = (props) => (
   <div>
     <span>Invoice total for {props.company.name}</span> 
+    <br/>
     <table>
       <tbody>
         <tr>
@@ -25,14 +26,16 @@ const Invoice = (props) => (
         ))}
       </tbody>
     </table>
+    <br/>
     <table>
       <tr>
         <th>Shipping Cost</th>
       </tr>
       <tr>
-        <th>$50.00</th>
+        <td>$50.00</td>
       </tr>
     </table>
+    <br/>
     <div>Total: {`$${props.total + 50}`}</div>
   </div>
 )

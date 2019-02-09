@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route} from 'react-router-dom';
 import ClientsList from './ClientsList.jsx';
 import Products from './Products.jsx';
 import Invoice from './Invoice.jsx';
+import Navigation from './Navigation.jsx';
 
 class Operations extends React.Component {
   constructor(props) {
@@ -148,8 +149,9 @@ class Operations extends React.Component {
 
   render() {
     return (
-      <div>
-      {this.renderPages()}
+      <div className="container">
+        <Navigation />
+        {this.renderPages()}
       </div>
     )
   }
